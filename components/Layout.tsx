@@ -13,7 +13,7 @@ const Layout: FC<Props> = ({ children, navbar }) => {
     <>
       <Toaster position={'top-right'} />
       <NetworkWarning />
-      <main className="mx-auto grid max-w-screen-2xl grid-cols-4 gap-4 px-3 pb-4 md:grid-cols-8 md:px-4 lg:grid-cols-12 lg:px-6 bg-fixed bg-gradient-to-b from-[#D9F0D6] to-[white]">
+      <main className="mx-auto grid max-w-screen-2xl grid-cols-4 gap-4 px-3 pb-4 md:grid-cols-8 md:px-4 lg:grid-cols-12 lg:px-6 bg-fixed bg-gradient-to-b from-[#D9F0D6] via-[#F4FFEE] via-[#F4FFEE]  to-[white]">
         <Navbar {...navbar} />
         {children}
       </main>
