@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Helvetica', ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         'slide-down': {
