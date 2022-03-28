@@ -74,7 +74,7 @@ const Address: NextPage<Props> = ({ mode, collectionId }) => {
   return (
     <Layout>
       <Head>
-        <title>{address} Profile | Reservoir Market</title>
+        <title>{address} Profile</title>
       </Head>
       <div className="col-span-full mt-4 mb-10 justify-self-center">
         {address && <EthAccount address={address} />}

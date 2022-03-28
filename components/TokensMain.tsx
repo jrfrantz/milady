@@ -318,7 +318,7 @@ const TokensMain: FC<Props> = ({
   return (
     <>
       <Head>
-        <title>{collection.data?.collection?.name} | Reservoir Market</title>
+        <title>{collection.data?.collection?.name}</title>
         <meta
           name="description"
           content={collection.data?.collection?.metadata?.description as string}
