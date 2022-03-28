@@ -21,7 +21,7 @@ export default function getMode(
   communityEnv?: string,
   collectionEnv?: string
 ) {
-  let mode: 'global' | 'community' | 'collection' = 'global'
+  let mode: 'global' | 'community' | 'collection' = 'collection'
 
   if (communityEnv) {
     mode = 'community'
