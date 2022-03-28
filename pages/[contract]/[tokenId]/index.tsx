@@ -129,7 +129,7 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
       <article className="col-span-full grid content-start items-start gap-4 md:col-span-4 lg:col-span-5 lg:col-start-2">
         {tokenOpenSea?.extension === null ? (
           <img
-            className="w-full rounded-2xl"
+            className="w-full rounded-none border-2 border-gray-500"
             src={optimizeImage(token?.token?.image, 533)}
           />
         ) : (
@@ -138,7 +138,7 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
             tokenImage={optimizeImage(token?.token?.image, 533)}
           />
         )}
-        <article className="col-span-full rounded-2xl border-[1px] border-gray-300 bg-white p-6">
+        <article className="col-span-full rounded-none border-2 border-gray-500 bg-white p-6">
           <div className="reservoir-h6 mb-4">Owner</div>
           {token?.token?.owner && (
             <Link href={`/address/${token.token.owner}`}>
@@ -150,7 +150,7 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
         </article>
       </article>
       <div className="col-span-full grid gap-4 md:col-span-4 lg:col-span-5">
-        <article className="col-span-full rounded-2xl border-[1px] border-gray-300 bg-white p-6">
+        <article className="col-span-full rounded-none border-2 border-gray-500 bg-white p-6">
           <div className="reservoir-h2 mb-3 overflow-hidden">
             {token?.token?.name || `#${token?.token?.tokenId}`}
           </div>
@@ -177,7 +177,7 @@ const Index: NextPage<Props> = ({ collectionId, mode }) => {
             </a>
           </Link>
         </article>
-        <article className="col-span-full rounded-2xl border-[1px] border-gray-300 bg-white p-6">
+        <article className="col-span-full rounded-none border-2 border-gray-500 bg-white p-6">
           <div className="grid grid-cols-2 gap-8">
             <Price
               title="List Price"
