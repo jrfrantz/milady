@@ -25,7 +25,7 @@ const TokenAttributes = ({ token }: Props) => {
                 {key}
               </p>
               <p
-                className="reservoir-subtitle truncate bg-primary-100 p-3 text-center capitalize"
+                className="reservoir-subtitle truncate bg-[#ddfdda] p-3 text-center capitalize"
                 title={value}
               >
                 {value}
