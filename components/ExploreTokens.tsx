@@ -142,7 +142,7 @@ const ExploreTokens: FC<Props> = ({ viewRef, attributes }) => {
           query: { id: router.query.id },
         }}
       >
-        <a className="btn-primary-outline">Clear filters</a>
+        <a className="buy-button-outline">Clear filters</a>
       </Link>
     </div>
   )

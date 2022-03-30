@@ -31,7 +31,7 @@ const SortMenuExplore: FC<Props> = ({ setSize }) => {
 
   return (
     <DropdownMenu.Root onOpenChange={setOpen}>
-      <DropdownMenu.Trigger className="btn-primary-outline w-[228px] justify-between px-4 py-3">
+      <DropdownMenu.Trigger className="buy-button-outline w-[228px] justify-between px-4 py-3">
         <span className="reservoir-label-l">{sortSelection}</span>
         <FiChevronDown
           className={`h-5 w-5 text-[#9CA3AF] transition-transform ${

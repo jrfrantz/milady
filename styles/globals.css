@@ -43,3 +43,24 @@
   background: #9db89b;
   color: #1d3007;
 }
+
+.buy-button-outline{
+  /* display: block; */
+  /* margin: 1em auto; */
+  /* width: 250px; */
+  padding: 0.5em;
+  font-size: 20px;
+  background: #f0ffee;
+  color: #2f4d0c;
+  cursor: pointer;
+  white-space: pre-line;
+  border-top: rgb(133, 133, 133) 3px solid;
+  border-left: rgb(133, 133, 133) 3px solid;
+  border-bottom: black 3px solid;
+  border-right: black 3px solid;
+}
+
+.buy-button:hover {
+  /* background: #9db89b;
+  color: #1d3007; */
+}

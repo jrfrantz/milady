@@ -394,7 +394,7 @@ const TokensMain: FC<Props> = ({
                 <SortMenu setSize={tokens.setSize} />
               )}
               <button
-                className="btn-primary-outline"
+                className="buy-button-outline"
                 title="Refresh collection"
                 disabled={refreshLoading}
                 onClick={() => refreshCollection(collectionId)}

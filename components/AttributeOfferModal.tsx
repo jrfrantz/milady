@@ -184,7 +184,7 @@ const AttributeOfferModal: FC<Props> = ({
       <Dialog.Trigger
         disabled={isInTheWrongNetwork}
         onClick={async () => await checkWallet()}
-        className="btn-primary-outline"
+        className="buy-button-outline"
       >
         Maker an Attribute Offer
       </Dialog.Trigger>

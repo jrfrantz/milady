@@ -178,7 +178,7 @@ const CollectionOfferModal: FC<Props> = ({
       <Dialog.Trigger
         disabled={isInTheWrongNetwork}
         onClick={async () => await checkWallet()}
-        className="btn-primary-outline"
+        className="buy-button-outline"
       >
         Make a Collection Offer
       </Dialog.Trigger>
