@@ -74,7 +74,7 @@ const ModalCard: FC<Props> = ({
           <Dialog.Title className="reservoir-h4">{modalTitle}</Dialog.Title>
           <Dialog.Close
             onClick={onCloseCallback}
-            className="btn-primary-outline p-1.5"
+            className="buy-button-outline p-1.5"
           >
             <HiX className="h-5 w-5" />
           </Dialog.Close>
@@ -119,13 +119,13 @@ const ModalCard: FC<Props> = ({
         {steps ? <Steps steps={steps} /> : children}
         {success ? (
           orderbook && orderbook?.length > 1 ? (
-            <button onClick={onContinue} className="btn-primary-fill w-full">
+            <button onClick={onContinue} className="buy-button w-full">
               Continue
             </button>
           ) : (
             <Dialog.Close
               onClick={onCloseCallback}
-              className="btn-primary-outline w-full"
+              className="buy-button w-full"
             >
               Success, Close this menu
             </Dialog.Close>
@@ -134,7 +134,7 @@ const ModalCard: FC<Props> = ({
           <div className="flex gap-4">
             <Dialog.Close
               onClick={onCloseCallback}
-              className="btn-primary-outline w-full"
+              className="buy-button-outline w-full"
             >
               Cancel
             </Dialog.Close>

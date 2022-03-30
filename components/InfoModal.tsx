@@ -19,7 +19,7 @@ const InfoModal: FC = () => {
                 <section>
                   <div className="mb-8 flex justify-between">
                     <p className="reservoir-h4">What is reservoir.market?</p>
-                    <Dialog.Close className="btn-primary-outline p-1.5">
+                    <Dialog.Close className="buy-button-outline p-1.5">
                       <HiX className="h-5 w-5" />
                     </Dialog.Close>
                   </div>

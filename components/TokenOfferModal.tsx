@@ -272,7 +272,7 @@ const TokenOfferModal: FC<Props> = ({ env, royalties, data, setToast }) => {
           setOrderbook(['reservoir'])
           await checkWallet()
         }}
-        className="btn-primary-outline w-full"
+        className="buy-button-outline w-full"
       >
         Make Offer
       </Dialog.Trigger>
@@ -293,7 +293,7 @@ const TokenOfferModal: FC<Props> = ({ env, royalties, data, setToast }) => {
                   waitingTx
                 }
                 onClick={execute}
-                className="btn-primary-fill w-full"
+                className="buy-button  w-full"
               >
                 {waitingTx ? (
                   <CgSpinner className="h-4 w-4 animate-spin" />

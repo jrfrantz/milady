@@ -331,7 +331,7 @@ const TokensMain: FC<Props> = ({
           <Dialog.Trigger
             disabled={floor?.price === null || waitingTx || isInTheWrongNetwork}
             onClick={execute}
-            className="btn-primary-fill"
+            className="buy-button"
           >
             {waitingTx ? (
               <CgSpinner className="h-4 w-4 animate-spin" />
@@ -394,7 +394,7 @@ const TokensMain: FC<Props> = ({
                 <SortMenu setSize={tokens.setSize} />
               )}
               <button
-                className="btn-primary-outline"
+                className="buy-button-outline"
                 title="Refresh collection"
                 disabled={refreshLoading}
                 onClick={() => refreshCollection(collectionId)}

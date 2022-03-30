@@ -184,7 +184,7 @@ const AttributeOfferModal: FC<Props> = ({
       <Dialog.Trigger
         disabled={isInTheWrongNetwork}
         onClick={async () => await checkWallet()}
-        className="btn-primary-outline"
+        className="buy-button-outline"
       >
         Maker an Attribute Offer
       </Dialog.Trigger>
@@ -203,7 +203,7 @@ const AttributeOfferModal: FC<Props> = ({
                   waitingTx
                 }
                 onClick={execute}
-                className="btn-primary-fill w-full"
+                className="buy-button w-full"
               >
                 {waitingTx ? (
                   <CgSpinner className="h-4 w-4 animate-spin" />
