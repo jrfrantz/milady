@@ -78,7 +78,7 @@ const ConnectWallet: FC = () => {
 
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger className="btn-primary-fill col-span-2 col-start-3 ml-auto md:col-span-4 md:col-start-5 lg:col-span-4 lg:col-start-9">
+      <DropdownMenu.Trigger className="buy-button col-span-2 col-start-3 ml-auto md:col-span-4 md:col-start-5 lg:col-span-4 lg:col-start-9">
         Connect Wallet
       </DropdownMenu.Trigger>
       <DropdownMenu.Content
@@ -118,21 +118,21 @@ const ConnectWallet: FC = () => {
     /*<button
       key={wallet.id}
       onClick={() => connect(wallet)}
-      className="btn-primary-fill col-span-2 col-start-3 ml-auto md:col-span-4 md:col-start-5 lg:col-span-4 lg:col-start-9"
+      className="buy-button col-span-2 col-start-3 ml-auto md:col-span-4 md:col-start-5 lg:col-span-4 lg:col-start-9"
     >
       Connect Wallet
     </button>
     <button
       key={wallet.id + '2'}
       onClick={() => connect(walletConnect)}
-      className="btn-primary-fill col-span-2 col-start-3 ml-auto md:col-span-4 md:col-start-5 lg:col-span-4 lg:col-start-9"
+      className="buy-button col-span-2 col-start-3 ml-auto md:col-span-4 md:col-start-5 lg:col-span-4 lg:col-start-9"
     >
       Connect WalletConnect
     </button>
     <button
       key={wallet.id + '22'}
       onClick={() => connect(walletLink)}
-      className="btn-primary-fill col-span-2 col-start-3 ml-auto md:col-span-4 md:col-start-5 lg:col-span-4 lg:col-start-9"
+      className="buy-button col-span-2 col-start-3 ml-auto md:col-span-4 md:col-start-5 lg:col-span-4 lg:col-start-9"
     >
       Connect WalletLink
     </button>

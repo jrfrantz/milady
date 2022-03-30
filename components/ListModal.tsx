@@ -247,7 +247,7 @@ const ListModal: FC<Props> = ({
             setOrderbook(['reservoir'])
             await checkWallet()
           }}
-          className="btn-primary-fill w-full"
+          className="buy-button w-full"
         >
           {token?.market?.floorAsk?.price ? 'Edit Listing' : 'List for Sale'}
         </button>
@@ -265,7 +265,7 @@ const ListModal: FC<Props> = ({
               <button
                 disabled={waitingTx || isInTheWrongNetwork}
                 onClick={execute}
-                className="btn-primary-fill w-full"
+                className="buy-button w-full"
               >
                 {waitingTx ? (
                   <CgSpinner className="h-4 w-4 animate-spin" />

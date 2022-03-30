@@ -119,13 +119,13 @@ const ModalCard: FC<Props> = ({
         {steps ? <Steps steps={steps} /> : children}
         {success ? (
           orderbook && orderbook?.length > 1 ? (
-            <button onClick={onContinue} className="btn-primary-fill w-full">
+            <button onClick={onContinue} className="buy-button w-full">
               Continue
             </button>
           ) : (
             <Dialog.Close
               onClick={onCloseCallback}
-              className="btn-primary-outline w-full"
+              className="buy-button w-full"
             >
               Success, Close this menu
             </Dialog.Close>
