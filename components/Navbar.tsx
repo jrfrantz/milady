@@ -13,6 +13,7 @@ const logo = process.env.NEXT_PUBLIC_NAVBAR_LOGO
 
 const Navbar: FC<Props> = ({ communityId }) => {
   const router = useRouter()
+  console.log("NAVBAR: ", router.pathname)
   return (
     <nav className="col-span-full grid grid-cols-4 gap-2 py-3 sm:py-4 md:grid-cols-8 lg:grid-cols-12">
       <Link href="/">
@@ -31,7 +32,8 @@ const Navbar: FC<Props> = ({ communityId }) => {
       </Link>
       {router.pathname !== '/' &&
         router.pathname !== '/[contract]/[tokenId]' &&
-        router.pathname !== '/[address]' && (
+        router.pathname !== '/[address]' &&
+        router.pathname !== '/address/[address]' && (
           <div className="hidden lg:col-span-4 lg:col-start-5 lg:block">
             <SearchCollections communityId={communityId} />
           </div>
