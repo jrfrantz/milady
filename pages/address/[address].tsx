@@ -99,6 +99,9 @@ const Address: NextPage<Props> = ({ mode, collectionId }) => {
             </Tabs.Trigger>
           ))}
         </Tabs.List>
+        <div className="col-span-full justify-self-center">
+          <p className='text-[#2f4d0c]'>List here with no platform fee and optionally list on Opensea, too. Listings are gasless.</p>
+        </div>
         <Tabs.Content value="portfolio" className="col-span-full">
           <UserTokensTable
             data={userTokens}
