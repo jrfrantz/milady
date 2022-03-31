@@ -10,6 +10,10 @@ When you list your NFT, you can make the order in two places:
 
 This repo is a fork of the reservoir sample marketplace (https://reservoirprotocol.github.io/), and uses the Reservoir API to make orders. The Reservoir API is a javascript API to interact with Opensea's smart contract.
 
+### pleasebepatientwith.me uses Opensea's smart contracts
+Here is a link to a video demonstrating that the site uses Opensea's smart contract (called Wyvern). It also directly compares the messages that Opensea asks you to sign vs what's generated on pleasebepatientwith.me . (They are the same but the video explains how you can prove it to yourself as well).
+https://www.loom.com/share/91c7918533c6420e84a260e64d38eadc
+
 
 ### Building yourself -- Install dependencies
 
