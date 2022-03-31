@@ -18,7 +18,7 @@ export default function useUserTokens(
   const { ref, inView } = useInView()
 
   const url = new URL(`/users/${user}/tokens/v2`, apiBase)
-
+  
   const tokens = useSWRInfinite<Tokens>(
     (index, previousPageData) =>
       getKey({ url, mode, collectionId, apiBase }, index, previousPageData),
