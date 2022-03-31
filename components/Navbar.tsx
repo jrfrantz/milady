@@ -13,7 +13,6 @@ const logo = process.env.NEXT_PUBLIC_NAVBAR_LOGO
 
 const Navbar: FC<Props> = ({ communityId }) => {
   const router = useRouter()
-  console.log("NAVBAR: ", router.pathname)
   return (
     <nav className="col-span-full grid grid-cols-4 gap-2 py-3 sm:py-4 md:grid-cols-8 lg:grid-cols-12">
       <Link href="/">
