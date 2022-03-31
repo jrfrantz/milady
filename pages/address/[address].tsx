@@ -45,7 +45,7 @@ const Address: NextPage<Props> = ({ mode, collectionId }) => {
   // const userActivity = useUserActivity(apiBase, [], address)
   const sellPositions = useUserPositions(apiBase, [], 'sell', address)
   const buyPositions = useUserPositions(apiBase, [], 'buy', address)
-
+  console.log("[address]: buyPositions: ", buyPositions);
   if (!apiBase || !chainId) {
     console.debug({ apiBase, chainId })
     return <div>There was an error</div>

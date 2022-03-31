@@ -64,7 +64,7 @@ const ModalCard: FC<Props> = ({
     !loading && steps && !steps.find(({ status }) => status === 'incomplete')
 
   const orderbookTitle =
-    orderbook && `Submitting to ${orderbooks[orderbook[0]]}`
+    orderbook && `Submitting to ${orderbooks[orderbook[0]].replace("reservoir.market", "pleasebepatientwith.me")}`
   const modalTitle = steps && orderbook ? orderbookTitle : title
 
   return (

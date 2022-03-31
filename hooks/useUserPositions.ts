@@ -17,7 +17,8 @@ export default function useUserPositions(
   const { ref, inView } = useInView()
 
   const url = new URL(`/users/${user}/positions/v1`, apiBase)
-
+  console.log("useUserPositions url", url)
+  
   const positions = useSWRInfinite<Positions>(
     (index, previousPageData) =>
       getKey({ url, apiBase, side }, index, previousPageData),
