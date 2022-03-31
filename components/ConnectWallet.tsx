@@ -57,7 +57,7 @@ const ConnectWallet: FC = () => {
           <Link href={`/address/${accountData.address}`}>
             <DropdownMenu.Item asChild>
               <a className="group flex w-full cursor-pointer items-center justify-between rounded px-4 py-3 outline-none transition hover:bg-neutral-100 focus:bg-neutral-100">
-                Portfolio
+              😏 List Your Milady
               </a>
             </DropdownMenu.Item>
           </Link>

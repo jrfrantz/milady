@@ -7,6 +7,8 @@ import { SWRResponse } from 'swr'
 import { SWRInfiniteResponse } from 'swr/infinite/dist/infinite'
 import { FiChevronDown } from 'react-icons/fi'
 import { paths } from '@reservoir0x/client-sdk'
+import Link from 'next/link'
+import { useAccount } from 'wagmi'
 
 type Props = {
   attributes: SWRResponse<
@@ -17,12 +19,21 @@ type Props = {
 
 const Sidebar: FC<Props> = ({ attributes, setTokensSize }) => {
   const router = useRouter()
-
+  const [{data: accountData}, disconnect] = useAccount()
   return (
     <Accordion.Root
       type="multiple"
       className="hidden border-r-[1px] border-gray-300 md:col-span-3 md:block lg:col-span-4 xl:col-span-3"
     >
+    { accountData?.address && (
+      <Link href={`/address/${accountData.address}`}>
+        <div className="overflow-hidden">
+        <button className="reservoir-h6 w-full border-b-[1px] border-gray-300 px-6 py-5 text-left transition hover:bg-primary-100">
+         💸 List your Milady
+        </button>
+        </div>
+      </Link>
+    )}
       <div className="overflow-hidden">
         <button
           onClick={() => {

@@ -31,7 +31,8 @@ const Navbar: FC<Props> = ({ communityId }) => {
       </Link>
       {router.pathname !== '/' &&
         router.pathname !== '/[contract]/[tokenId]' &&
-        router.pathname !== '/[address]' && (
+        router.pathname !== '/[address]' &&
+        router.pathname !== '/address/[address]' && (
           <div className="hidden lg:col-span-4 lg:col-start-5 lg:block">
             <SearchCollections communityId={communityId} />
           </div>
