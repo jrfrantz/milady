@@ -39,6 +39,14 @@ const Hero: FC<Props> = ({ stats, header, children }) => {
           } sm:h-[200px] sm:rounded-xl`}
         ></div>
       )}
+      
+        <div className='col-span-full grid place-items-center pt-2'>
+        <audio controls>
+          <source src={`/ost.ogg`} type="audio/ogg" />
+        Your browser does not support the audio element.
+        </audio>
+        </div>
+
       <div className="col-span-full grid place-items-center gap-5 pt-4 pb-8 sm:pb-6 lg:flex lg:items-center lg:justify-between">
         <div className="flex items-center">
           <img className="h-[70px] w-[70px] rounded-full" src={header.image} />
