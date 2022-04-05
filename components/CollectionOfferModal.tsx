@@ -180,13 +180,13 @@ const CollectionOfferModal: FC<Props> = ({
         onClick={async () => await checkWallet()}
         className="buy-button-outline"
       >
-        Make a Collection Offer
+        Offer Below Floor
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay>
           <ModalCard
             loading={waitingTx}
-            title="Make a Collection Offer"
+            title="Bid Below Floor"
             onCloseCallback={() => setSteps(undefined)}
             steps={steps}
             actionButton={

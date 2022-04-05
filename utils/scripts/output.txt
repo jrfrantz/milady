@@ -1,4 +1,56 @@
 {
+  id: '0xf98d995a291a31f39d04d02263bb4f36efe0104b3cfa39786ab9b49b5c413fae',
+  kind: 'wyvern-v2.3',
+  side: 'sell',
+  tokenSetId: 'token:0x5af0d9827e0c53e4799bb226655a1de152a425a5:7123',
+  tokenSetSchemaHash: '0x0000000000000000000000000000000000000000000000000000000000000000',
+  maker: '0x929d99600bb36dde6385884b857c4b0f05aede35',
+  taker: '0x0000000000000000000000000000000000000000',
+  price: 1.053,
+  value: 1.0003499999999999,
+  validFrom: 1649043785,
+  validUntil: 1649648882,
+  sourceId: null,
+  feeBps: 500,
+  feeBreakdown: [
+    {
+      bps: 500,
+      kind: 'royalty',
+      recipient: '0xb520f068a908a1782a543aacc3847adb77a04778'
+    }
+  ],
+  expiration: 1649648882,
+  createdAt: '2022-04-04T03:48:14.149Z',
+  updatedAt: '2022-04-04T03:48:14.149Z',
+  rawData: {
+    r: '0x63d2accd0669b44e0d659b75e6a81a1c4fbbffa9b30e379b416ad19a0be247ea',
+    s: '0x38becafe9d32069e7c75e44c412ab19502d37332898ccfb99a004b9f7cd0b9ac',
+    v: 27,
+    kind: 'erc721-single-token',
+    salt: '9196518549322128980283596016553797116655738456533660839776927476526305438609',
+    side: 1,
+    extra: '0',
+    maker: '0x929d99600bb36dde6385884b857c4b0f05aede35',
+    nonce: '0',
+    taker: '0x0000000000000000000000000000000000000000',
+    target: '0x5af0d9827e0c53e4799bb226655a1de152a425a5',
+    calldata: '0x23b872dd000000000000000000000000929d99600bb36dde6385884b857c4b0f05aede3500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001bd3',
+    exchange: '0x7f268357a8c2552623316e2562d90e642bb538e5',
+    saleKind: 0,
+    basePrice: '1053000000000000000',
+    howToCall: 0,
+    listingTime: 1649043785,
+    feeRecipient: '0xb520f068a908a1782a543aacc3847adb77a04778',
+    paymentToken: '0x0000000000000000000000000000000000000000',
+    staticTarget: '0x0000000000000000000000000000000000000000',
+    expirationTime: 1649648882,
+    makerRelayerFee: 500,
+    staticExtradata: '0x',
+    takerRelayerFee: 0,
+    replacementPattern: '0x000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000'
+  }
+}
+{
   id: '0xa0a62d0783d5be048986013d2efd5ccd256ed95533d8d31fd8376bdec620ef1e',
   kind: 'wyvern-v2.3',
   side: 'sell',
@@ -414,5 +466,5 @@
     replacementPattern: '0x00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
   }
 }
-Done, 30 iterations and 8 in total
+Done, 31 iterations and 9 in total
 Done
