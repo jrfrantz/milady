@@ -79,14 +79,14 @@ export const getServerSideProps: GetServerSideProps<{
   contractAddress?: string
 }> = async ({ req }) => {
   const { mode, collectionId } = getMode(req, communityEnv, collectionEnv)
-
+  console.log({ mode, collectionId }, communityEnv, collectionEnv)
   let contractAddress: string | undefined = undefined
 
   if (mode === 'collection') {
     const url = new URL('/collection/v1', apiBase)
 
     const query: paths['/collection/v1']['get']['parameters']['query'] = {
-      slug: collectionId,
+      id: "0xca7ca7bcc765f77339be2d648ba53ce9c8a262bd",
     }
 
     setParams(url, query)
@@ -97,6 +97,7 @@ export const getServerSideProps: GetServerSideProps<{
       (await res.json()) as paths['/collection/v1']['get']['responses']['200']['schema']
 
     contractAddress = json.collection?.id
+    console.log("INDEX: ", contractAddress, json);
 
     return { props: { mode, collectionId, contractAddress } }
   }

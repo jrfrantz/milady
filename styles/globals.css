@@ -1,14 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Obvia';
-  src: url('/fonts/obvia_medium-webfont.woff2') format('woff2'),
-    url('/fonts/obvia_bold-webfont.woff2') format('woff2');
-  font-display: swap;
-  font-weight: 400 500 700;
-}
+/*@font-face {
+  font-family: 'FuzzyBubbles';
+  src: /*url('/fonts/FuzzyBubbles-Bold.ttf') format('ttf'),*/
+  /*font-display: bold;
+  font-weight: 400 500 700;*/
+/*}*/
 
 .masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */
@@ -30,14 +30,18 @@
   /* width: 250px; */
   padding: 0.5em;
   font-size: 20px;
-  background: #b9d9b7;
-  color: #2f4d0c;
+  background: #ff7fbf;
+  color: #fff;
   cursor: pointer;
   white-space: pre-line;
-  border-top: rgb(133, 133, 133) 3px solid;
+  border-radius: 3rem;
+  padding: 1rem;
+  font-family: 'Fuzzy Bubbles';
+  text-transform: uppercase;
+  /*border-top: rgb(133, 133, 133) 3px solid;
   border-left: rgb(133, 133, 133) 3px solid;
   border-bottom: black 3px solid;
-  border-right: black 3px solid;
+  border-right: black 3px solid;*/
 } 
 .buy-button:hover {
   background: #9db89b;
@@ -50,14 +54,20 @@
   /* width: 250px; */
   padding: 0.5em;
   font-size: 20px;
-  background: #f0ffee;
-  color: #2f4d0c;
+  font-family: 'Fuzzy Bubbles';
+  text-transform: uppercase;
+  background: #fff;
+  color: #ff7fbf;
   cursor: pointer;
   white-space: pre-line;
+  border-radius: 3em;
+  border: #ff7fbf 3px solid;
+  /*
   border-top: rgb(133, 133, 133) 3px solid;
   border-left: rgb(133, 133, 133) 3px solid;
   border-bottom: black 3px solid;
   border-right: black 3px solid;
+  */
 }
 
 .buy-button:hover {
