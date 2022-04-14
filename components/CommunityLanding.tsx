@@ -20,8 +20,7 @@ const CommunityLanding: FC<Props> = ({ apiBase, collectionId, mode }) => {
 
   const size = (data && data[data.length - 1].collections?.length) || 0
 
-  const isBigCommunity = size > 8
-
+  const isBigCommunity = size > 8  
   const title = metaTitle ? (
     <title>{metaTitle}</title>
   ) : (
@@ -42,7 +41,7 @@ const CommunityLanding: FC<Props> = ({ apiBase, collectionId, mode }) => {
       }
     />
   )
-
+  console.log("CommunityLanding: %o", communities);
   return (
     <>
       <Head>
@@ -75,4 +74,5 @@ const communityIds: { [x: string]: any } = {
   bayc: 'BAYC',
   forgottenrunes: 'Forgotten Runes',
   artblocks: 'Art Blocks',
+  feltzine: 'feltzine',
 }

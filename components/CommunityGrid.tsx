@@ -20,10 +20,11 @@ const CommunityGrid: FC<Props> = ({ communities }) => {
     ? data
         .flatMap(({ collections }) => collections)
         // @ts-ignore
-        .filter((collection) => !collection?.sampleImages?.includes(null))
+        //.filter((collection) => !collection?.sampleImages?.includes(null))
     : []
   const didReactEnd = data && data[data.length - 1].collections?.length === 0
-
+  console.log("CommunityGrid: Communities: %o", communities);
+  console.log("CommunityGrid: MappedCollections: %o", mappedCollections);
   return (
     <>
       <Masonry
@@ -40,7 +41,7 @@ const CommunityGrid: FC<Props> = ({ communities }) => {
         columnClassName="masonry-grid_column"
       >
         {!data && isValidating
-          ? Array(20)
+          ? Array(3)
               .fill(null)
               .map((_, index) => (
                 <div
@@ -49,6 +50,7 @@ const CommunityGrid: FC<Props> = ({ communities }) => {
                 ></div>
               ))
           : mappedCollections?.map((community, idx) => {
+              console.log("Mapped collection, community, idx", mappedCollections, community, idx);
               return (
                 <Link
                   key={`${community?.name}${idx}`}
@@ -74,7 +76,7 @@ const CommunityGrid: FC<Props> = ({ communities }) => {
               )
             })}
         {!didReactEnd &&
-          Array(20)
+          Array(5)
             .fill(null)
             .map((_, index) => {
               if (index === 0) {

@@ -13,6 +13,7 @@ import getMode from 'lib/getMode'
 import toast from 'react-hot-toast'
 import Toast from 'components/Toast'
 import { paths, setParams } from '@reservoir0x/client-sdk'
+import CommunityLanding from 'components/CommunityLanding'
 
 // Environment variables
 // For more information about these variables
@@ -49,7 +50,13 @@ const Home: NextPage<Props> = ({ mode, contractAddress, collectionId }) => {
     <Layout navbar={{ mode, communityId: collectionId }}>
       {mode === 'global' ? (
         <Homepage apiBase={apiBase} />
-      ) : (
+      ): mode === 'community' ? (
+        <CommunityLanding
+          apiBase={apiBase}
+          collectionId={collectionId!}
+          mode={mode}
+        />
+        ) : (
         <TokensMain
           apiBase={apiBase}
           chainId={+chainId as ChainId}
