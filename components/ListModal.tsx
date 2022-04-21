@@ -181,7 +181,7 @@ const ListModal: FC<Props> = ({
     const expirationValue = expirationPresets
       .find(({ preset }) => preset === expiration)
       ?.value()
-
+    console.log("ListModal: execute with source");
     await listToken({
       query: {
         // contract: token_?.contract,
@@ -190,6 +190,7 @@ const ListModal: FC<Props> = ({
         weiPrice: ethers.utils.parseEther(listingPrice).toString(),
         token: `${token_?.contract}:${token_?.tokenId}`,
         expirationTime: expirationValue,
+        source: 'PleaseBePatientWith.Me'
       },
       signer,
       apiBase,
@@ -197,6 +198,7 @@ const ListModal: FC<Props> = ({
       handleSuccess,
       handleError,
     })
+    console.log("ListModal: execute with source done");
     setWaitingTx(false)
   }
 
