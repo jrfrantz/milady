@@ -186,7 +186,7 @@ const ListModal: FC<Props> = ({
       query: {
         // contract: token_?.contract,
         orderbook: 'reservoir',
-        maker,
+        maker: maker!,
         weiPrice: ethers.utils.parseEther(listingPrice).toString(),
         token: `${token_?.contract}:${token_?.tokenId}`,
         expirationTime: expirationValue,
@@ -223,7 +223,7 @@ const ListModal: FC<Props> = ({
         query: {
           // contract: token_?.contract,
           orderbook: 'opensea',
-          maker,
+          maker: maker!,
           weiPrice: ethers.utils.parseEther(listingPrice).toString(),
           token: `${token_?.contract}:${token_?.tokenId}`,
           expirationTime: expirationValue,
