@@ -154,8 +154,10 @@ const CancelOffer: FC<Props> = ({
     await checkWallet()
     setWaitingTx(true)
     await cancelOrder({
-      id,
-      maker,
+      query: {
+        id: id!,
+        maker: maker!,
+      },
       signer,
       apiBase,
       setState: setSteps,

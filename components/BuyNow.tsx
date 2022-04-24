@@ -148,7 +148,10 @@ const BuyNow: FC<Props> = ({
 
     setWaitingTx(true)
     await buyToken({
-      token: `${token?.token?.contract}:${token?.token?.tokenId}`,
+      query: {
+        token: `${token?.token?.contract}:${token?.token?.tokenId}`,
+        taker: await signer!.getAddress()
+      },
       // contract: token?.token?.contract,
       signer,
       apiBase,

@@ -157,12 +157,16 @@ const AcceptOffer: FC<Props> = ({
   }
 
   const execute = async () => {
+    console.log("AcceptOffer: tokenString", tokenString)
     await checkWallet()
-
+    console.log("checked wallet");
     setWaitingTx(true)
     await acceptOffer({
       apiBase,
-      token: tokenString,
+      query: {
+        token: tokenString!,
+        taker: await signer!.getAddress(),
+      },
       // contract: contract || token?.token?.contract,
       setState: setSteps,
       signer,
